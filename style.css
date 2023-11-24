@@ -1,0 +1,72 @@
+:root {
+    --one: #222831;
+    --two: #393e46;
+    --three: #00adb5;
+    --four: #eeeeee;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  .container {
+    padding-top: 40px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--three);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .note {
+    margin: 1.5rem;
+    width: 400px;
+    height: 400px;
+    background-color: var(--four);
+  }
+  .tools{
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--two);
+    color: var(--four);
+    display: flex;
+    justify-content: end;
+
+}
+.tools i{
+    font-size: 2rem;
+    padding: .7rem;
+    cursor: pointer;
+}
+.note textarea{
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+}
+#add-note{
+    border-radius: 10px;
+    background-color: var(--one);
+    color: var(--four);
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    position: fixed;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    
+}
+.note textarea:focus{
+    outline: none;
+    border: none;
+}
